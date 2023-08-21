@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+  <a href="{% url 'accounts:logout' %}?next=/accounts/login">Log Out</a>
+  <h2>Welcome to Your Profile</h2>
+  <p>Hello, {{ user.username }}!</p>
+  <p>Email: {{ user.email }}</p>
+  <p>Other profile information goes here.</p>
+{% endblock %}
+

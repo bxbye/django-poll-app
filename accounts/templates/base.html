@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Web App{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <!-- Add navigation links, logo, etc. -->
+    </header>
+    
+    <main>
+        {% block content %}
+        <!-- Content from extending templates will be placed here -->
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <!-- Add footer content -->
+    </footer>
+</body>
+</html>
